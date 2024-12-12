@@ -188,7 +188,7 @@ border-radius: 16px;
 
 .createContent{
   width: 240px;
-  height: 240px;
+  height: 260px;
   margin-top: 10px;
   /* background: tomato; */
   display: flex;
@@ -211,16 +211,7 @@ border-radius: 16px;
   /* background: #4675BD; */
   position: relative;
   /* display: flex; */
-}
-.accountContent p{
-  position: absolute;
-  margin: 0;
-  font-size: 8px;
-  color: #3e3e3e;
-  top: 10%;
-  right:0%;
-  transform: translate(0%, -50%);
-  z-index: 2;
+
 }
 .accountFace{
   width: 48px;
@@ -247,11 +238,9 @@ border-radius: 16px;
   transform: translate(0%, 0%);
   z-index: 1;
 }
-.accountName h4{
+.accountName p{
   font-size: 16px;
   color: #3e3e3e;
-  margin: 0 0 0 20px;
+  margin: 0;
   text-align: center;
-  line-height: 32px;
-  font-weight: bold;
 }

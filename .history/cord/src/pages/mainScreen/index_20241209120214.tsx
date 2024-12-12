@@ -61,24 +61,11 @@ export default function Main() {
               <figure><img src="/images/museumIcon.png" alt="嘘博物館アイコン"/></figure>
             </div>
             <div className={styles.limitedFeatures}>
-              <p className={styles.featuresText}>土日限定機能</p>
               <div className={styles.usoRank}>
-                <figure><img src="/images/rankIcon.png" alt="嘘ランキングアイコン" /></figure>
+                <figure><img src="" alt="" /></figure>
               </div>
-              <div className={styles.usoStory}>
-                <figure><img src="/images/storyIcon.png" alt="嘘ストーリーアイコン" /></figure>
-              </div>
-            </div>
-          </div>
-          <div className={styles.createContent}>
-            <button className={styles.createButton}>嘘スレッドをたてる</button>
-            <div className={styles.accountContent}>
-              <figure className={styles.accountFace}>
-                <img src="" alt="" />
-              </figure>
-              <p>マイアカウント</p>
-              <div className={styles.accountName}>
-                <h4>細田カイト</h4>
+              <div>
+                <figure><img src="" alt="" /></figure>
               </div>
             </div>
           </div>

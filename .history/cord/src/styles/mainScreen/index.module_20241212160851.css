@@ -188,7 +188,7 @@ border-radius: 16px;
 
 .createContent{
   width: 240px;
-  height: 240px;
+  height: 260px;
   margin-top: 10px;
   /* background: tomato; */
   display: flex;
@@ -208,19 +208,10 @@ border-radius: 16px;
 .accountContent{
   width: 180px;
   height: 48px;
-  /* background: #4675BD; */
-  position: relative;
-  /* display: flex; */
-}
-.accountContent p{
-  position: absolute;
-  margin: 0;
-  font-size: 8px;
-  color: #3e3e3e;
-  top: 10%;
-  right:0%;
-  transform: translate(0%, -50%);
-  z-index: 2;
+  background: #4675BD;
+  /* position: relative; */
+  display: flex;
+
 }
 .accountFace{
   width: 48px;
@@ -228,30 +219,11 @@ border-radius: 16px;
   background: #fefefe;
   border-radius:50%;
   margin: 0;
-  border: 2px #ddd solid;
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
-  z-index: 2;
 }
 .accountName{
   width: 160px;
   height: 32px;
   background: #fefefe;
   border-radius:4px;
-  border: 2px #ddd solid;
-  position: absolute;
-  bottom: 0%;
-  right:0%;
-  transform: translate(0%, 0%);
-  z-index: 1;
-}
-.accountName h4{
-  font-size: 16px;
-  color: #3e3e3e;
-  margin: 0 0 0 20px;
-  text-align: center;
-  line-height: 32px;
-  font-weight: bold;
+
 }

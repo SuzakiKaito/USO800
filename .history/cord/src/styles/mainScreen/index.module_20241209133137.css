@@ -81,29 +81,29 @@
 .footerContent{
   width: 390px;
   height: 260px;
-  /* background: tomato; */
+  background: tomato;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .features{
   width: 110px;
   height: 260px;
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .usoMuseum{
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   background: #fefefe;
   border-radius: 50%;
   position: relative;
   border: #DDDDDD 2px solid;
 }
 .usoMuseum figure{
-  width: 28px;
-  height: 24px;
+  width: 34px;
+  height: 29px;
   margin: auto;
   position: absolute;
   top: 50%;
@@ -123,29 +123,25 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; 
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: column;
+  flex-flow: column; */
 }
-/* .limitedFeatures::before{
+.limitedFeatures::before{
   content: "";
 display: block;
+/* height: 100%; */
 min-height: 100%;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
 border: 1px solid #fefefe;
 border-radius: 16px;
-} */
-.featuresText{
-  margin: 0;
-  color: #fefefe;
-  font-size: 8px;
 }
 .usoRank{
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: #fefefe;
   border: #DDDDDD 2px solid;
   border-radius: 50%;
@@ -161,97 +157,6 @@ border-radius: 16px;
   transform: translate(-50%, -50%);
 }
 .usoRank figure img{
-  width: 100%;
-  height: 100%;
-}
-.usoStory{
-  width: 50px;
-  height: 50px;
-  background: #fefefe;
-  border: #DDDDDD 2px solid;
-  border-radius: 50%;
-  position: relative;
-}
-.usoStory figure{
-  margin: 0;
-  width: 34px;
-  height: 32px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.usoStory figure img{
-  width: 100%;
-  height: 100%;
-}
-
-.createContent{
-  width: 240px;
-  height: 240px;
-  margin-top: 10px;
-  /* background: tomato; */
-  display: flex;
-  justify-content: space-around;
-  align-items: end;
-  flex-flow: column;
-}
-.createButton{
-  width: 240px;
-  height: 65px;
-  background: #E76363;
-  color: #FEFEFE;
-  border-radius: 20px;
-  border: none;
-  font-size: 16px;
-}
-.accountContent{
-  width: 180px;
-  height: 48px;
-  /* background: #4675BD; */
-  position: relative;
-  /* display: flex; */
-}
-.accountContent p{
-  position: absolute;
-  margin: 0;
-  font-size: 8px;
-  color: #3e3e3e;
-  top: 10%;
-  right:0%;
-  transform: translate(0%, -50%);
-  z-index: 2;
-}
-.accountFace{
-  width: 48px;
-  height: 48px;
-  background: #fefefe;
-  border-radius:50%;
-  margin: 0;
-  border: 2px #ddd solid;
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
-  z-index: 2;
-}
-.accountName{
-  width: 160px;
-  height: 32px;
-  background: #fefefe;
-  border-radius:4px;
-  border: 2px #ddd solid;
-  position: absolute;
-  bottom: 0%;
-  right:0%;
-  transform: translate(0%, 0%);
-  z-index: 1;
-}
-.accountName h4{
-  font-size: 16px;
-  color: #3e3e3e;
-  margin: 0 0 0 20px;
-  text-align: center;
-  line-height: 32px;
-  font-weight: bold;
+  width: 120%;
+  height: 120%;
 }

@@ -76,9 +76,8 @@ export default function Main() {
               <figure className={styles.accountFace}>
                 <img src="" alt="" />
               </figure>
-              <p>マイアカウント</p>
               <div className={styles.accountName}>
-                <h4>細田カイト</h4>
+                <p>細田カイト</p>
               </div>
             </div>
           </div>

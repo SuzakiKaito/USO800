@@ -214,13 +214,14 @@ border-radius: 16px;
 }
 .accountContent p{
   position: absolute;
-  margin: 0;
+
   font-size: 8px;
   color: #3e3e3e;
-  top: 10%;
+  top: 50%;
   right:0%;
   transform: translate(0%, -50%);
   z-index: 2;
+
 }
 .accountFace{
   width: 48px;

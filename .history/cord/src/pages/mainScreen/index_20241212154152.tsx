@@ -70,18 +70,6 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className={styles.createContent}>
-            <button className={styles.createButton}>嘘スレッドをたてる</button>
-            <div className={styles.accountContent}>
-              <figure className={styles.accountFace}>
-                <img src="" alt="" />
-              </figure>
-              <p>マイアカウント</p>
-              <div className={styles.accountName}>
-                <h4>細田カイト</h4>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
