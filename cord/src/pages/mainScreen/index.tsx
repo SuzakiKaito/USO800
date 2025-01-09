@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import styles from '@/styles/mainScreen/index.module.css';
 
 export default function Main() {
@@ -16,22 +16,13 @@ export default function Main() {
     { id: 10, text: "今、コロンビアにいます。お土産何がいい？", niceCount: 0, postTime: "22分前" },
   ]);
 
-  useEffect(() => {
-    const style = document.createElement("style");
-    style.innerHTML = `
-      body {
-        scrollbar-width: none; /* Firefox 用 */
-        -ms-overflow-style: none; /* IE/Edge 用 */
-      }
-      body::-webkit-scrollbar {
-        display: none; /* Chrome/Safari 用 */
-      }
-    `;
-    document.head.appendChild(style);
-    return () => {
-      document.head.removeChild(style); // クリーンアップ
-    };
-  }, []);
+  // モーダルの表示状態を管理
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  // モーダル表示を切り替える関数
+  const toggleModal = () => {
+    setIsModalVisible(!isModalVisible);
+  };
 
   return (
     <>
@@ -58,7 +49,7 @@ export default function Main() {
         <div className={styles.footerContent}>
           <div className={styles.features}>
             <div className={styles.usoMuseum}>
-              <figure><img src="/images/museumIcon.png" alt="嘘博物館アイコン"/></figure>
+              <figure><img src="/images/museumIcon.png" alt="嘘博物館アイコン" /></figure>
             </div>
             <div className={styles.limitedFeatures}>
               <p className={styles.featuresText}>土日限定機能</p>
@@ -71,7 +62,12 @@ export default function Main() {
             </div>
           </div>
           <div className={styles.createContent}>
-            <button className={styles.createButton}>嘘スレッドをたてる</button>
+            <button
+              className={styles.createButton}
+              onClick={toggleModal} // ボタンをクリックするとモーダルの表示が切り替わる
+            >
+              嘘スレッドをたてる
+            </button>
             <div className={styles.accountContent}>
               <figure className={styles.accountFace}>
                 <img src="" alt="" />
@@ -83,6 +79,35 @@ export default function Main() {
             </div>
           </div>
         </div>
+        {/* モーダルと背景の表示状態を切り替え */}
+        {isModalVisible && (
+          <>
+            <div className={styles.bgContent}></div>
+            <div className={styles.modalContent}>
+              <h3 className={styles.modalText}>嘘スレッドを書き込もう</h3>
+              <form action="" className={styles.modalForm}>
+                <input
+                  type="text"
+                  name="name"
+                  maxLength={20}
+                  className={styles.modalInput}
+                />
+                <div className={styles.modalButtons}>
+                  <button
+                    className={styles.deleteButton}
+                    type="button"
+                    onClick={toggleModal} // モーダルを閉じる
+                  >
+                    削除する
+                  </button>
+                  <button className={styles.postButton} type="submit">
+                    投稿する
+                  </button>
+                </div>
+              </form>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

@@ -4,6 +4,7 @@
   height: 844px;
   background-image: url(/images/lieBackground.png);
   margin: 0 auto;
+  position: relative;
 }
 
 .mainContent{
@@ -195,6 +196,7 @@ border-radius: 16px;
   justify-content: space-around;
   align-items: end;
   flex-flow: column;
+  /* position: relative; */
 }
 .createButton{
   width: 240px;
@@ -204,6 +206,8 @@ border-radius: 16px;
   border-radius: 20px;
   border: none;
   font-size: 16px;
+  box-shadow: 0  10px 0px 0 #BA4545;
+  cursor: pointer;
 }
 .accountContent{
   width: 180px;
@@ -254,4 +258,70 @@ border-radius: 16px;
   text-align: center;
   line-height: 32px;
   font-weight: bold;
+}
+.bgContent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:990;
+  width: 390px;
+  height: 844px;
+  background:#787878;
+  opacity:.4;
+  /* border-radius: 8px; */
+  /* display: none; */
+}
+.modalContent{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:999;
+  width: 340px;
+  height: 160px;
+  border-radius: 8px;
+  background: #FEFEFE;
+  /* display: none; */
+}
+.modalText{
+  width: 340px;
+  height: 40px;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+  color: #fefefe;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 360;
+  background: #E76363;
+  line-height: 40px;
+}
+.modalForm{
+  width: 340px;
+  height: 120px;
+  display: flex;
+  flex-flow: column;
+}
+.modalInput{
+  border: none;
+  width: 335px;
+  height: 90px;
+}
+.modalButtons{
+  width: 340px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.deleteButton{
+  background: none;
+  border: none;
+  font-size: 10px;
+}
+.postButton{
+  background: none;
+  border: none;
+  font-size: 10px;
+  color: #E76363;
 }

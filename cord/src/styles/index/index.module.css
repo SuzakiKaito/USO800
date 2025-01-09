@@ -3,6 +3,8 @@
   width: 390px;
   height: 844px;
   background-image: url(/images/lieBackground.png);
+  margin: 0 auto;
+
 }
 .logoContent{
   width: 100%;
@@ -14,15 +16,16 @@
   align-items: end;
 }
 .logoContent figure{
-  width: 210px;
-  height: 160px;
-  background: #FFFFEA;
+  width: 340px;
+  /* height: 220px; */
+  /* background: #FFFFEA; */
   /* padding-top: 200px; */
   margin: 0 auto;
 }
 .logoContent figure img{
   width: 100%;
   height: 100%;
+  margin-left: 15px;
 }
 .buttonContent{
   width: 390px;
@@ -31,6 +34,7 @@
 }
 .buttonContent h2{
   font-size: 16px;
+  font-weight: 400;
   text-align: center;
   padding-top: 100px;
   margin: 0;

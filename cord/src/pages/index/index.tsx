@@ -8,13 +8,13 @@ export default function home(){
         <div className={styles.logoContent}>
           <figure>
             {/* <h2>ロゴ</h2> */}
-            <img src="" alt="" />
+            <img src="/images/logo.png" alt="USO800のロゴ"/>
           </figure>
         </div>
         <div className={styles.buttonContent}>
           <h2>ここから先の会話は全部嘘です。</h2>
           <div className={styles.button}>
-            <a className={styles.btnEmergency}>
+            <a href="/mainScreen" className={styles.btnEmergency}>
               <span className={styles.btnEmergencyBottom}></span>
               <span className={styles.btnEmergencyTop}><span>Lets go</span></span>
             </a>
