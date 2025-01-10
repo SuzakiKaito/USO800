@@ -1,9 +1,14 @@
 .boxContent{
   background: #FFFFEA;
   background-image: url(/images/lieBackground.png);
+  background-repeat: no-repeat;
+}
+.boxContent{
+  width: 390px;
+  margin: 0 auto;
 }
 .logoContent{
-  width: 100%;
+  width: 390px;
   height: 350px;
   /* background:tomato; */
   margin: 0 auto;

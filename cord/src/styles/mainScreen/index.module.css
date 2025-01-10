@@ -1,12 +1,17 @@
 .boxContent{
   background: #FFFFEA;
   background-image: url(/images/lieBackground.png);
+  background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
 }
 
-.mainContent{
+.boxContent{
+  /* width: １００px; */
   width: 390px;
+}
+.mainContent{
+  width:390px;
   height: 584px;
 }
 
@@ -195,6 +200,13 @@ border-radius: 16px;
   align-items: end;
   flex-flow: column;
   /* position: relative; */
+}
+.sortContent{
+  width: 240px;
+  height: 24px;
+  border-radius: 16px;
+  background: #fefefe;
+  border:#ddd solid 2px;
 }
 .createButton{
   width: 240px;
