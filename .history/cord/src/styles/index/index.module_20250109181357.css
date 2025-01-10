@@ -1,5 +1,6 @@
 .boxContent{
-  background: #FFFFEA;
+  /* background: #FFFFEA; */
+  background: red;
   background-image: url(/images/lieBackground.png);
 }
 .logoContent{

@@ -1,13 +1,12 @@
 .boxContent{
-  background: #FFFFEA;
+  /* background: #FFFFEA; */
+  background: red;
   background-image: url(/images/lieBackground.png);
-  margin: 0 auto;
-  position: relative;
 }
 
 .mainContent{
-  width: 390px;
-  height: 584px;
+  border: solid 1px tomato;
+
 }
 
 .mainContent h2{
@@ -18,8 +17,6 @@
 }
 
 .threadContent{
-  width: 390px;
-  height: 460px;
   /* background: tomato; */
   margin-top:20px ;
   overflow: scroll;

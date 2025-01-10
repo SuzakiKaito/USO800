@@ -38,6 +38,7 @@ export default function Main() {
   };
 
   return (
+    <>
       <div className={styles.boxContent}>
         <div className={styles.mainContent}>
           <h2>嘘スレッド</h2>
@@ -130,5 +131,6 @@ export default function Main() {
           </>
         )}
       </div>
+    </>
   );
 }

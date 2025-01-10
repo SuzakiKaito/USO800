@@ -14,6 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <link rel="stylesheet" href="/_next/static/css/app/layout.css" precedence="high"
+         as="style" />
+      </head>
       <body>
         {children}
       </body>
