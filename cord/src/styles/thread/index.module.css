@@ -1,0 +1,171 @@
+.boxContent{
+  background: #FFFFEA;
+  background-image: url(/images/lieBackground.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  /* z-index: -2; */
+  width: 390px;
+  height: 844px;
+}
+
+.mainContent h2{
+  font-size: 28px;
+  padding-top: 60px;
+  text-align: center;
+  margin: 0;
+}
+.threadContent{
+  width: 340px;
+  height: 680px;
+  background: #fefefe;
+  margin: 20px auto 0;
+}
+.thread{
+  width: 340px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+.thread h2{
+  width: 70%;
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: left;
+}
+.thread p{
+  width: 10%;
+  font-size: 10px;
+  text-align: end;
+  margin-top: 30px;
+}
+.niceContent{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.niceContent figure{
+  margin: 0;
+}
+.niceContent p{
+  width: 24px;
+  margin: 0 ;
+  text-align: center;
+  padding: 0;
+  font-size: 10px;
+}
+.threadPost{
+  width: 85%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.threadPost p{
+  font-size: 8px;
+  opacity: .3;
+}
+.threadText{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.threadText p{
+  font-size: 8px;
+  opacity: 1;
+}
+.commentContent{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  overflow: scroll;
+}
+.threads{
+  width:85%;
+  height: 40px;
+  background: #fefefe;
+  border-bottom: #4675BD 1px dotted;
+  margin: 0 auto 10px; 
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  position: relative;
+}
+.threads p,.thread h3{
+  margin: 0;
+}
+.threads p{
+  width: 15%;
+}
+.threads h3{
+  font-size: 12px;
+  font-weight: 500;
+}
+.closeButton{
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  font-size: 12px;
+  border: none;
+  background: none;
+  /* text-align: center; */
+  /* margin: 0; */
+}
+.closeButtonStyle {
+  background:none;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.modalContent{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:999;
+  width: 310px;
+  height: 170px;
+  border: #4675BD 2px solid;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  background: #fefefe;
+}
+.inputText{
+  width: 305px;
+  height: 150px;
+  border: none;
+  /* border: #4675BD 1px solid; */
+}
+.inputText::placeholder{
+  text-align: center;
+}
+.modalButton{
+  width: 300px;
+  margin: 0 auto;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.deleteButton{
+  background: none;
+  border: none;
+  font-size: 10px;
+
+}
+.postButton{
+  background: none;
+  border: none;
+  color: #E76363;
+  font-size: 10px;
+}

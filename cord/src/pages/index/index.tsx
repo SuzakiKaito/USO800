@@ -12,7 +12,7 @@ export default function home(){
           </figure>
         </div>
         <div className={styles.buttonContent}>
-          <h2>ここから先の会話は全部嘘です。</h2>
+          <h2>ここから先の会話は全部<span>嘘</span>です。</h2>
           <div className={styles.button}>
             <a href="/mainScreen" className={styles.btnEmergency}>
               <span className={styles.btnEmergencyBottom}></span>

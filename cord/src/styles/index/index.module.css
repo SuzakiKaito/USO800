@@ -31,18 +31,26 @@
 .buttonContent{
   width: 390px;
   height: 494px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
   /* background: tomato; */
 }
 .buttonContent h2{
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 800;
   text-align: center;
   padding-top: 100px;
   margin: 0;
 }
+.buttonContent h2 span{
+  font-size: 20px;
+  color: #BA1C21;
+}
 
 .button{
-  margin-top: 100px;
+  margin-top: 20px;
+
 }
 
 a.btnEmergency {

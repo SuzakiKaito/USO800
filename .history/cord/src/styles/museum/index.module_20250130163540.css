@@ -1,0 +1,406 @@
+.boxContent{
+  background: #FFFFEA;
+  background-image: url(/images/lieBackground.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  /* z-index: -2; */
+  width: 390px;
+}
+
+.mainContent{
+  width:390px;
+  height: 584px;
+}
+.mainContent h2{
+  font-size: 28px;
+  padding-top: 60px;
+  text-align: center;
+  margin: 0;
+}
+.museumDate{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+.museumDate p{
+  margin: 0;
+  font-size: 16px;
+}
+.museumDate figure{
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+.museumDate figure img{
+  width: 100%;
+  height: 100%;
+}
+.prevContent{
+  position: absolute;
+  left: 20px;
+}
+.nextContent{
+  position: absolute;
+  right: 20px;
+}
+.threadsRank{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 20px;
+}
+.threads{
+  width: 85%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.threads figure{
+  margin: 0;
+  width: 40px;
+  height: 46px;
+}
+.threads figure img{
+  width: 100%;
+  height: 100%;
+}
+.thread{
+  width: 300px;
+  height: 40px;
+  background: #fefefe;
+  border-bottom: #9CC5F1 3px solid;
+  margin: 0 auto 5px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* box-shadow: #3e3e3e 1px 1px 0 .3; */
+}
+.threadText{
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  width: 85%;
+}
+.threadIcon{
+  width: 15%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.threadIcon p{
+  margin: 0;
+  font-size: 10px;
+}
+.thread figure{
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+.thread figure img{
+  width: 100%;
+  height: 100%;
+}
+.comment{
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.bubble{
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 130px;
+  height: 130px;
+  border: 2px solid #333333;
+  background: #fefefe;
+  border-radius: 50%;
+  margin-bottom: 70px;
+}
+.bubble::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 26px;
+  height: 2px;
+  transform: rotate(50deg);
+  box-sizing: border-box;
+  background-color: #333333;
+  box-shadow: 0 2px 0 #ffffff, 0 -2px 0 #ffffff; 
+}
+.bubble ::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  width: 140px;
+  height: 140px;
+  background: #4675BD;
+  border-radius: 50%;
+
+}
+.comment figure{
+  width: 150px;
+  height: 200px;
+  margin: 0;
+}
+.comment figure img{
+  width: 100%;
+  height: 100%;
+}
+.dataModal{
+  width: 320px;
+  height: 180px;
+  position: fixed;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#fefefe ;
+  border: #4675BD 2px solid;
+  border-radius: 8px;
+}
+.modalContent{
+  width: 320px;
+  height: 180px;
+  position: relative;
+}
+.modalContent figure{
+  margin: 0;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.prevArrow{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.nextArrow{
+  position: absolute;
+  bottom: 50%;
+  transform: translate(-50%,-50%);
+}
+.dataModal h4{
+  margin:10px 0 0 0;
+  text-align: center;
+}
+.weekContent{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.week,.weekBox{
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  background: #eee;
+  border-radius: 4px;
+}
+.weekBox{
+  background:#FDD8D8 ;
+  border: 2px #E76363 solid;
+}
+.footerContent{
+  width: 390px;
+  height: 260px;
+  /* background: tomato; */
+  display: flex;
+  justify-content: center;
+}
+.features{
+  width: 110px;
+  height: 260px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.usoMuseum{
+  width: 60px;
+  height: 60px;
+  background: #fefefe;
+  border-radius: 50%;
+  position: relative;
+  border: #DDDDDD 2px solid;
+}
+.usoMuseum figure{
+  width: 35px;
+  height: 30px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.usoMuseum figure img{
+  width: 100%;
+  height: 100%;
+}
+.limitedFeatures{
+  width: 72px;
+  height: 160px;
+  background: #4675BD;
+  border-radius: 16px;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+}
+.featuresText{
+  margin: 0;
+  color: #fefefe;
+  font-size: 8px;
+}
+.usoRank{
+  width: 50px;
+  height: 50px;
+  background: #fefefe;
+  border: #DDDDDD 2px solid;
+  border-radius: 50%;
+  position: relative;
+}
+.usoRank figure{
+  margin: 0;
+  width: 24px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.usoRank figure img{
+  width: 100%;
+  height: 100%;
+}
+.usoStory{
+  width: 50px;
+  height: 50px;
+  background: #fefefe;
+  border: #DDDDDD 2px solid;
+  border-radius: 50%;
+  position: relative;
+}
+.usoStory figure{
+  margin: 0;
+  width: 34px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.usoStory figure img{
+  width: 100%;
+  height: 100%;
+}
+.createContent{
+  width: 240px;
+  height: 240px;
+  /* background: tomato; */
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-flow: column;
+  position: relative;
+}
+.createButton{
+  width: 240px;
+  height: 65px;
+  background: #E76363;
+  color: #FEFEFE;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0  10px 0px 0 #BA4545;
+  cursor: pointer;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 85px;
+  text-align: center;
+  line-height: 65px;
+  text-decoration: none;
+}
+.accountContent{
+  width: 180px;
+  height: 48px;
+  /* background: #4675BD; */
+  position: relative;
+  /* display: flex; */
+  position: absolute;
+  bottom: 0;
+}
+.accountContent p{
+  position: absolute;
+  margin: 0;
+  font-size: 8px;
+  color: #3e3e3e;
+  top: 10%;
+  right:0%;
+  transform: translate(0%, -50%);
+  z-index: 2;
+}
+.accountFace{
+  width: 48px;
+  height: 48px;
+  background: #fefefe;
+  border-radius:50%;
+  margin: 0;
+  border: 2px #ddd solid;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  z-index: 2;
+  overflow: hidden;
+
+}
+.accountFace figure{
+  width: 30px;
+  height: 42px;
+  margin: 10px 0 0 10px;
+}
+.accountFace img{
+  width: 100%;
+  height: 100%;
+}
+.accountName{
+  width: 160px;
+  height: 32px;
+  background: #fefefe;
+  border-radius:4px;
+  border: 2px #ddd solid;
+  position: absolute;
+  bottom: 0%;
+  right:0%;
+  transform: translate(0%, 0%);
+  z-index: 1;
+}
+.accountName h4{
+  font-size: 16px;
+  color: #3e3e3e;
+  margin: 0 0 0 20px;
+  text-align: center;
+  line-height: 32px;
+  font-weight: bold;
+}
